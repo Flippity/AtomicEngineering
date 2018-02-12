@@ -3,7 +3,7 @@ package flippity.aten.registrys;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.oredict.OreDictionary;
 
-public class autoOreDict {
+public class AutoOreDict {
 	public static boolean isItemStackOreDictionaryCompatible(ItemStack itemStack, String... names) {
 		if (itemStack != null && names != null && names.length > 0) {
 			String name = OreDictionary.getOreName(OreDictionary.getOreID(itemStack));

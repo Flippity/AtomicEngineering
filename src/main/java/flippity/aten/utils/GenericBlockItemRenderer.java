@@ -2,8 +2,8 @@ package flippity.aten.utils;
 
 import org.lwjgl.opengl.GL11;
 
-import flippity.aten.blocks.researchTables.researchTableEntity;
-import flippity.aten.blocks.researchTables.researchTableItemRenderer;
+import flippity.aten.blocks.researchTables.ResearchTableEntity;
+import flippity.aten.blocks.researchTables.ResearchTableItemRenderer;
 import net.minecraft.client.renderer.tileentity.TileEntityRendererDispatcher;
 import net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer;
 import net.minecraft.item.ItemStack;
@@ -15,8 +15,8 @@ public class GenericBlockItemRenderer implements IItemRenderer {
 	private TileEntity tile;
 	private TileEntitySpecialRenderer renderer;
 
-	public GenericBlockItemRenderer(researchTableEntity tile2,
-			researchTableItemRenderer researchTableItemRenderer) {
+	public GenericBlockItemRenderer(ResearchTableEntity tile2,
+			ResearchTableItemRenderer researchTableItemRenderer) {
 	}
 	
 	public GenericBlockItemRenderer(TileEntity tile, TileEntitySpecialRenderer renderer) {

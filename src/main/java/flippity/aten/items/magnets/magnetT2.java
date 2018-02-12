@@ -4,18 +4,18 @@ import java.util.List;
 
 import flippity.aten.AtomicEngineering;
 import flippity.aten.lib.Reference;
-import flippity.aten.registrys.tabs;
+import flippity.aten.registrys.Tabs;
 import net.minecraft.entity.item.EntityItem;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 
-public class magnetT2 extends Item {
+public class MagnetT2 extends Item {
 
-	public magnetT2() {
+	public MagnetT2() {
 		super();
-		this.setCreativeTab(tabs.tabAtomItems);
+		this.setCreativeTab(Tabs.tabAtomItems);
 		this.setTextureName(Reference.MOD_ID + ":magnetTier2");
 		this.setUnlocalizedName("magnetT2");
 	}

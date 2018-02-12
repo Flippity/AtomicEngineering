@@ -3,7 +3,7 @@ package flippity.aten.items.nuclear;
 import flippity.aten.AtomicEngineering;
 import flippity.aten.ItemsBlocks;
 import flippity.aten.lib.Reference;
-import flippity.aten.registrys.tabs;
+import flippity.aten.registrys.Tabs;
 import ibxm.Player;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayer;
@@ -14,11 +14,11 @@ import net.minecraft.potion.PotionEffect;
 import net.minecraft.world.World;
 import scala.collection.script.Update;
 
-public class uraniumPuck235 extends Item {
+public class UraniumPuck235 extends Item {
 
-	public uraniumPuck235() {
+	public UraniumPuck235() {
 		super();
-		this.setCreativeTab(tabs.tabAtomItems);
+		this.setCreativeTab(Tabs.tabAtomItems);
 		this.setTextureName(Reference.MOD_ID + ":uraniumPuck");
 		this.setUnlocalizedName("uraniumPuck235");
 

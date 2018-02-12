@@ -26,11 +26,11 @@ public class Recipes {
 		// =====================================================================\\
 		// Blocks
 		// Aluminum
-		GameRegistry.addRecipe(new ItemStack(Aluminum.aluminumBlock),
+		GameRegistry.addRecipe(new ItemStack(Aluminum.BlockAluminum),
 				new Object[] { "bbb", "bbb", "bbb", 'b', Aluminum.aluminumIngot });
-		GameRegistry.addRecipe(new ItemStack(Brass.brassBlock),
+		GameRegistry.addRecipe(new ItemStack(Brass.BlockBrass),
 				new Object[] { "bbb", "bbb", "bbb", 'b', Brass.brassIngot });
-		GameRegistry.addRecipe(new ItemStack(Bronze.bronzeBlock),
+		GameRegistry.addRecipe(new ItemStack(Bronze.BlockBronze),
 				new Object[] { "bbb", "bbb", "bbb", 'b', Bronze.bronzeIngot });
 		GameRegistry.addRecipe(new ItemStack(Copper.copperBlock),
 				new Object[] { "bbb", "bbb", "bbb", 'b', Copper.copperIngot });

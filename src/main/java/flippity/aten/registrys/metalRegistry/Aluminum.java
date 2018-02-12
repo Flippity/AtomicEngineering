@@ -1,20 +1,20 @@
 package flippity.aten.registrys.metalRegistry;
 
 import cpw.mods.fml.common.registry.GameRegistry;
-import flippity.aten.items.aluminum.aluminumIngot;
-import flippity.aten.items.aluminum.aluminumDust;
-import flippity.aten.items.aluminum.aluminumPipe;
-import flippity.aten.items.aluminum.aluminumPlate;
-import flippity.aten.items.aluminum.aluminumRod;
+import flippity.aten.items.aluminum.AluminumIngot;
+import flippity.aten.items.aluminum.AluminumDust;
+import flippity.aten.items.aluminum.AluminumPipe;
+import flippity.aten.items.aluminum.AluminumPlate;
+import flippity.aten.items.aluminum.AluminumRod;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.Item;
-import flippity.aten.blocks.aluminum.aluminumBlock;
-import flippity.aten.blocks.aluminum.aluminumOre;
+import flippity.aten.blocks.aluminum.BlockAluminum;
+import flippity.aten.blocks.aluminum.OreAluminum;
 
 public class Aluminum {
-	public static Block aluminumBlock;
-	public static Block aluminumOre;
+	public static Block BlockAluminum;
+	public static Block OreAluminum;
 	public static Item aluminumIngot;
 	public static Item aluminumDust;
 	public static Item aluminumPipe;
@@ -24,25 +24,25 @@ public class Aluminum {
 	public static Item aluminumHardMold;
 
 	public static void initItems() {
-		aluminumIngot = new aluminumIngot();
+		aluminumIngot = new AluminumIngot();
 		GameRegistry.registerItem(aluminumIngot, "aluminumIngot");
-		aluminumDust = new aluminumDust();
+		aluminumDust = new AluminumDust();
 		GameRegistry.registerItem(aluminumDust, "aluminumDust");
-		aluminumPipe = new aluminumPipe();
+		aluminumPipe = new AluminumPipe();
 		GameRegistry.registerItem(aluminumPipe, "aluminumPipe");
-		aluminumPlate = new aluminumPlate();
+		aluminumPlate = new AluminumPlate();
 		GameRegistry.registerItem(aluminumPlate, "aluminumPlate");
-		aluminumRod = new aluminumRod();
+		aluminumRod = new AluminumRod();
 		GameRegistry.registerItem(aluminumRod, "aluminumRod");
 
 
 	}
 
 	public static void initBlocks() {
-		aluminumBlock = new aluminumBlock(Material.iron);
-		GameRegistry.registerBlock(aluminumBlock, "aluminumBlock");
-		aluminumOre = new aluminumOre(Material.rock);
-		GameRegistry.registerBlock(aluminumOre, "aluminumOre");
+		BlockAluminum = new BlockAluminum(Material.iron);
+		GameRegistry.registerBlock(BlockAluminum, "BlockAluminum");
+		OreAluminum = new OreAluminum(Material.rock);
+		GameRegistry.registerBlock(OreAluminum, "OreAluminum");
 
 	}
 }

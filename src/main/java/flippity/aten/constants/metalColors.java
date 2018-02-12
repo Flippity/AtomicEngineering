@@ -1,6 +1,6 @@
 package flippity.aten.constants;
 
-public class metalColors {
+public class MetalColors {
 	public static int aluminum = 0xF9F6F6;
 	public static int brass = 0xF3B14C;
 	public static int bronze = 0xD59430;

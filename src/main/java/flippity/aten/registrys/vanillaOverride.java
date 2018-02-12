@@ -6,7 +6,7 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import flippity.aten.lib.Reference;
 import net.minecraft.init.Items;
 
-public class vanillaOverride {
+public class VanillaOverride {
 	@Mod.EventHandler
 	public void preInit(FMLPreInitializationEvent event) {
 		/*

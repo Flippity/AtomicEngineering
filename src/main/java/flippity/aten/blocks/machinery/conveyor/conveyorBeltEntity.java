@@ -6,7 +6,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.world.World;
 
-public class conveyorBeltEntity extends TileEntity {
+public class ConveyorBeltEntity extends TileEntity {
 
 	public ItemStack getStackInSlot(int slot) {
 		return null;

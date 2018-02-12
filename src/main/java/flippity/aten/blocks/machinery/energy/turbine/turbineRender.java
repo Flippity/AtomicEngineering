@@ -17,14 +17,14 @@ import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.World;
 
-public class turbineRender extends TileEntitySpecialRenderer {
+public class TurbineRender extends TileEntitySpecialRenderer {
 
     //The model of your block
-    public final turbineModel model;
+    public final TurbineModel model;
     private static final ResourceLocation resourceloc = new ResourceLocation(flippity.aten.lib.Reference.MOD_ID + ":" + "textures/blocks/turbineBlock.png");
 
-    public turbineRender() {
-        this.model = new turbineModel();
+    public TurbineRender() {
+        this.model = new TurbineModel();
     }
 
     @Override

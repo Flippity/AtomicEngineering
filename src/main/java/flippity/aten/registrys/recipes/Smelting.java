@@ -14,7 +14,7 @@ public class Smelting {
 	public void preInit(FMLPreInitializationEvent event) {
 		// Smelting recipes
 		// Aluminum
-		GameRegistry.addSmelting(Aluminum.aluminumOre, new ItemStack(Aluminum.aluminumIngot), 1.0F);
+		GameRegistry.addSmelting(Aluminum.OreAluminum, new ItemStack(Aluminum.aluminumIngot), 1.0F);
 		// Copper
 		GameRegistry.addSmelting(Copper.copperOre, new ItemStack(Copper.copperIngot), 1.0F);
 		// Lead

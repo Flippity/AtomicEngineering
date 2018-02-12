@@ -6,12 +6,12 @@ import net.minecraftforge.client.IItemRenderer;
 import net.minecraftforge.client.IItemRenderer.ItemRenderType;
 import net.minecraftforge.client.IItemRenderer.ItemRendererHelper;
 
-public class conveyorBeltItemRenderer implements IItemRenderer {
+public class ConveyorBeltItemRenderer implements IItemRenderer {
 
-    private conveyorBeltModel conveyorBeltModel;
+    private ConveyorBeltModel conveyorBeltModel;
 
-    public conveyorBeltItemRenderer() {
-        conveyorBeltModel = new conveyorBeltModel();
+    public ConveyorBeltItemRenderer() {
+        conveyorBeltModel = new ConveyorBeltModel();
     }
 
     @Override
@@ -26,7 +26,7 @@ public class conveyorBeltItemRenderer implements IItemRenderer {
 
     @Override
     public void renderItem(ItemRenderType type, ItemStack item, Object... data) {
-        TileEntityRendererDispatcher.instance.renderTileEntityAt(new conveyorBeltEntity(), 0.0D, 0.0D, 0.0D, 1.0f);
+        TileEntityRendererDispatcher.instance.renderTileEntityAt(new ConveyorBeltEntity(), 0.0D, 0.0D, 0.0D, 1.0f);
     }
 
 }

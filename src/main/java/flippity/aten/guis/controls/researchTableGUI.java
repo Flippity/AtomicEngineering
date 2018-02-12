@@ -1,5 +1,5 @@
 package flippity.aten.guis.controls;
 
-public class researchTableGUI {
+public class ResearchTableGUI {
 
 }

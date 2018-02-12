@@ -7,8 +7,8 @@ import cpw.mods.fml.relauncher.SideOnly;
 import flippity.aten.AtomicEngineering;
 import flippity.aten.ItemsBlocks;
 import flippity.aten.lib.Reference;
-import flippity.aten.registrys.tabs;
-import flippity.aten.blocks.researchTables.researchTableEntity;
+import flippity.aten.registrys.Tabs;
+import flippity.aten.blocks.researchTables.ResearchTableEntity;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockContainer;
 import net.minecraft.block.material.Material;
@@ -23,11 +23,11 @@ import net.minecraft.util.MathHelper;
 import net.minecraft.world.World;
 import net.minecraftforge.common.util.ForgeDirection;
 
-public class conveyorBelt extends BlockContainer{
-	public conveyorBelt() {
+public class ConveyorBelt extends BlockContainer{
+	public ConveyorBelt() {
 		super(Material.iron);
 		this.setBlockName("conveyor");
-		this.setCreativeTab(tabs.tabAtomBlocks);
+		this.setCreativeTab(Tabs.tabAtomBlocks);
 		this.setBlockTextureName(Reference.MOD_ID + ":conveyorParticles.png");
 		this.setHardness(1F);
 		this.setStepSound(soundTypeMetal);
@@ -153,7 +153,7 @@ public class conveyorBelt extends BlockContainer{
 	  
 	@Override
 	public TileEntity createNewTileEntity(World world, int id) {
-		return new conveyorBeltEntity();
+		return new ConveyorBeltEntity();
 	}
 	
 	public void onBlockPlacedBy(World world, int x, int y, int z, EntityLivingBase player, ItemStack stack)

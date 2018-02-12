@@ -1,10 +1,10 @@
 package flippity.aten.registrys.metalRegistry;
 
 import cpw.mods.fml.common.registry.GameRegistry;
-import flippity.aten.items.gold.goldDust;
-import flippity.aten.items.gold.goldPipe;
-import flippity.aten.items.gold.goldPlate;
-import flippity.aten.items.gold.goldRod;
+import flippity.aten.items.gold.GoldDust;
+import flippity.aten.items.gold.GoldPipe;
+import flippity.aten.items.gold.GoldPlate;
+import flippity.aten.items.gold.GoldRod;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.Item;
@@ -18,13 +18,13 @@ public class Gold {
 	public static Item goldHardMold;
 
 	public static void initItems() {
-		goldDust = new goldDust();
+		goldDust = new GoldDust();
 		GameRegistry.registerItem(goldDust, "goldDust");
-		goldPipe = new goldPipe();
+		goldPipe = new GoldPipe();
 		GameRegistry.registerItem(goldPipe, "bronzePipe");
-		goldPlate = new goldPlate();
+		goldPlate = new GoldPlate();
 		GameRegistry.registerItem(goldPlate, "goldPlate");
-		goldRod = new goldRod();
+		goldRod = new GoldRod();
 		GameRegistry.registerItem(goldRod, "goldRod");
 
 	}

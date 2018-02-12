@@ -12,14 +12,14 @@ import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.World;
 
-public class researchTableRender extends TileEntitySpecialRenderer {
+public class ResearchTableRender extends TileEntitySpecialRenderer {
 
     //The model of your block
-    public final researchTableModel model;
+    public final ResearchTableModel model;
     private static final ResourceLocation resourceloc = new ResourceLocation(flippity.aten.lib.Reference.MOD_ID + ":" + "textures/blocks/researchTable.png");
 
-    public researchTableRender() {
-        this.model = new researchTableModel();
+    public ResearchTableRender() {
+        this.model = new ResearchTableModel();
     }
     
     

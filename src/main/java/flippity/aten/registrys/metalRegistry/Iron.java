@@ -1,10 +1,10 @@
 package flippity.aten.registrys.metalRegistry;
 
 import cpw.mods.fml.common.registry.GameRegistry;
-import flippity.aten.items.iron.ironDust;
-import flippity.aten.items.iron.ironPipe;
-import flippity.aten.items.iron.ironPlate;
-import flippity.aten.items.iron.ironRod;
+import flippity.aten.items.iron.IronDust;
+import flippity.aten.items.iron.IronPipe;
+import flippity.aten.items.iron.IronPlate;
+import flippity.aten.items.iron.IronRod;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.Item;
@@ -18,13 +18,13 @@ public class Iron {
 	public static Item ironHardMold;
 
 	public static void initItems() {
-		ironDust = new ironDust();
+		ironDust = new IronDust();
 		GameRegistry.registerItem(ironDust, "ironDust");
-		ironPipe = new ironPipe();
+		ironPipe = new IronPipe();
 		GameRegistry.registerItem(ironPipe, "ironPipe");
-		ironPlate = new ironPlate();
+		ironPlate = new IronPlate();
 		GameRegistry.registerItem(ironPlate, "ironPlate");
-		ironRod = new ironRod();
+		ironRod = new IronRod();
 		GameRegistry.registerItem(ironRod, "ironRod");
 
 	}

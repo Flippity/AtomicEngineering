@@ -19,12 +19,12 @@ import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.World;
 
-public class conveyorBeltRender extends TileEntitySpecialRenderer {
+public class ConveyorBeltRender extends TileEntitySpecialRenderer {
     //The model of your block
-    public final conveyorBeltModel model;
+    public final ConveyorBeltModel model;
     static int part = 0;
-    public conveyorBeltRender() {
-        this.model = new conveyorBeltModel();
+    public ConveyorBeltRender() {
+        this.model = new ConveyorBeltModel();
     }
 
     public static void onUpdate() {

@@ -8,7 +8,7 @@ import net.minecraft.entity.Entity;
  * turbineBlock - Flippity
  * Created using Tabula 7.0.0
  */
-public class turbineModel extends ModelBase {
+public class TurbineModel extends ModelBase {
     public ModelRenderer shape1;
     public ModelRenderer shape2;
     public ModelRenderer shape3;
@@ -27,7 +27,7 @@ public class turbineModel extends ModelBase {
     public ModelRenderer shape16;
     public ModelRenderer shape17;
 
-    public turbineModel() {
+    public TurbineModel() {
         this.textureWidth = 20;
         this.textureHeight = 20;
         this.shape7 = new ModelRenderer(this, 0, 1);

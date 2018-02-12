@@ -4,12 +4,12 @@ import net.minecraft.client.renderer.tileentity.TileEntityRendererDispatcher;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.client.IItemRenderer;
 
-public class researchTableItemRenderer implements IItemRenderer {
+public class ResearchTableItemRenderer implements IItemRenderer {
 
-    private researchTableModel researchTableModel;
+    private ResearchTableModel researchTableModel;
 
-    public researchTableItemRenderer() {
-        researchTableModel = new researchTableModel();
+    public ResearchTableItemRenderer() {
+        researchTableModel = new ResearchTableModel();
     }
 
     @Override
@@ -24,7 +24,7 @@ public class researchTableItemRenderer implements IItemRenderer {
 
     @Override
     public void renderItem(ItemRenderType type, ItemStack item, Object... data) {
-        TileEntityRendererDispatcher.instance.renderTileEntityAt(new researchTableEntity(), 0.0D, 0.0D, 0.0D, 0.0f);
+        TileEntityRendererDispatcher.instance.renderTileEntityAt(new ResearchTableEntity(), 0.0D, 0.0D, 0.0D, 0.0f);
     }
 
 }

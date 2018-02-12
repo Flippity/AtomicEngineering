@@ -34,7 +34,7 @@ public class AluminumGen implements IWorldGenerator {
 	}
 
 	public void generateOverworld(World world, Random rand, int x, int z) {
-		generateOre(Aluminum.aluminumOre, world, rand, x, z, 2, 16, 20, 0, 512, Blocks.stone);
+		generateOre(Aluminum.OreAluminum, world, rand, x, z, 2, 16, 20, 0, 512, Blocks.stone);
 
 	}
 

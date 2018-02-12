@@ -4,12 +4,12 @@ import net.minecraft.client.renderer.tileentity.TileEntityRendererDispatcher;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.client.IItemRenderer;
 
-public class turbineItemRenderer implements IItemRenderer {
+public class TurbineItemRenderer implements IItemRenderer {
 
-    private turbineModel turbineModel;
+    private TurbineModel turbineModel;
 
-    public turbineItemRenderer() {
-        turbineModel = new turbineModel();
+    public TurbineItemRenderer() {
+        turbineModel = new TurbineModel();
     }
 
     @Override
@@ -24,7 +24,7 @@ public class turbineItemRenderer implements IItemRenderer {
 
     @Override
     public void renderItem(ItemRenderType type, ItemStack item, Object... data) {
-        TileEntityRendererDispatcher.instance.renderTileEntityAt(new turbineEntity(), 0.0D, 0.0D, 0.0D, 0.0f);
+        TileEntityRendererDispatcher.instance.renderTileEntityAt(new TurbineEntity(), 0.0D, 0.0D, 0.0D, 0.0f);
     }
 
 }

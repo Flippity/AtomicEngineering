@@ -3,7 +3,7 @@ package flippity.aten.items.tools;
 import flippity.aten.AtomicEngineering;
 import flippity.aten.ItemsBlocks;
 import flippity.aten.lib.Reference;
-import flippity.aten.registrys.tabs;
+import flippity.aten.registrys.Tabs;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Items;
@@ -19,7 +19,7 @@ public class antidote extends ItemFood {
 		super(healAmount, saturationModifier, wolvesFavorite);
 		this.setUnlocalizedName("antidote");
 		this.setTextureName(Reference.MOD_ID + ":antidote");
-		this.setCreativeTab(tabs.tabAtomItems);
+		this.setCreativeTab(Tabs.tabAtomItems);
 		this.setAlwaysEdible();
 	}
 

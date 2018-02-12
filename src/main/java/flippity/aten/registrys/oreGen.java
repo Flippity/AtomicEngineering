@@ -14,7 +14,7 @@ import flippity.aten.lib.TinGen;
 import flippity.aten.lib.UraniumGen;
 import flippity.aten.lib.ZincGen;
 
-public class oreGen {
+public class OreGen {
 	@Mod.EventHandler
 	public void preInit(FMLPreInitializationEvent event) {
 		GameRegistry.registerWorldGenerator(new AluminumGen(), 0);

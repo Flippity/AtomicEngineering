@@ -8,13 +8,13 @@ import net.minecraft.entity.Entity;
  * conveyorBelt - Flippity
  * Created using Tabula 7.0.0
  */
-public class conveyorBeltModel extends ModelBase {
+public class ConveyorBeltModel extends ModelBase {
     public ModelRenderer shape1;
     public ModelRenderer shape2;
     public ModelRenderer shape3;
     public ModelRenderer shape6;
 
-    public conveyorBeltModel() {
+    public ConveyorBeltModel() {
         this.textureWidth = 128;
         this.textureHeight = 64;
         this.shape1 = new ModelRenderer(this, 11, 27);

@@ -9,7 +9,7 @@ import org.lwjgl.opengl.GL11;
  * reactorCore - Flippity
  * Created using Tabula 7.0.0
  */
-public class researchTableModel extends ModelBase {
+public class ResearchTableModel extends ModelBase {
     public ModelRenderer shape1;
     public ModelRenderer shape2;
     public ModelRenderer shape3;
@@ -17,7 +17,7 @@ public class researchTableModel extends ModelBase {
     public ModelRenderer shape5;
     public ModelRenderer shape6;
 
-    public researchTableModel() {
+    public ResearchTableModel() {
         this.textureWidth = 128;
         this.textureHeight = 64;
         this.shape3 = new ModelRenderer(this, 0, 0);

@@ -4,79 +4,79 @@ package flippity.aten;
 //==============================Imports===============================\\
 //=====================================================================\\
 import cpw.mods.fml.common.registry.GameRegistry;
-import flippity.aten.blocks.building_mats.hardBrick;
-import flippity.aten.blocks.building_mats.reinforcedGlowstone;
-import flippity.aten.blocks.lead.leadBlock;
-import flippity.aten.blocks.lead.leadOre;
-import flippity.aten.blocks.nickel.nickelBlock;
-import flippity.aten.blocks.nickel.nickelOre;
-import flippity.aten.blocks.nuclear.uraniumOre;
-import flippity.aten.blocks.osmium.osmiumBlock;
-import flippity.aten.blocks.osmium.osmiumOre;
-import flippity.aten.blocks.platinum.platinumBlock;
-import flippity.aten.blocks.platinum.platinumOre;
-import flippity.aten.blocks.silver.silverBlock;
-import flippity.aten.blocks.silver.silverOre;
-import flippity.aten.blocks.steel.steelBlock;
-import flippity.aten.blocks.tin.tinBlock;
-import flippity.aten.blocks.tin.tinOre;
-import flippity.aten.blocks.zinc.zincBlock;
-import flippity.aten.blocks.zinc.zincOre;
-import flippity.aten.items.gold.goldDust;
-import flippity.aten.items.gold.goldPipe;
-import flippity.aten.items.gold.goldPlate;
-import flippity.aten.items.gold.goldRod;
-import flippity.aten.items.iron.ironDust;
-import flippity.aten.items.iron.ironPipe;
-import flippity.aten.items.iron.ironPlate;
-import flippity.aten.items.iron.ironRod;
-import flippity.aten.items.lead.leadDust;
-import flippity.aten.items.lead.leadIngot;
-import flippity.aten.items.lead.leadPipe;
-import flippity.aten.items.lead.leadPlate;
-import flippity.aten.items.lead.leadRod;
-import flippity.aten.items.misc.building_mats.concreteMix;
-import flippity.aten.items.misc.building_mats.hardbrick;
-import flippity.aten.items.nickel.nickelDust;
-import flippity.aten.items.nickel.nickelIngot;
-import flippity.aten.items.nickel.nickelPipe;
-import flippity.aten.items.nickel.nickelPlate;
-import flippity.aten.items.nickel.nickelRod;
-import flippity.aten.items.nuclear.uraniumPuck235;
-import flippity.aten.items.nuclear.uraniumPuck238;
-import flippity.aten.items.nuclear.yellowcake;
-import flippity.aten.items.osmium.osmiumDust;
-import flippity.aten.items.osmium.osmiumIngot;
-import flippity.aten.items.osmium.osmiumPipe;
-import flippity.aten.items.osmium.osmiumPlate;
-import flippity.aten.items.osmium.osmiumRod;
-import flippity.aten.items.platinum.platinumDust;
-import flippity.aten.items.platinum.platinumIngot;
-import flippity.aten.items.platinum.platinumPipe;
-import flippity.aten.items.platinum.platinumPlate;
-import flippity.aten.items.platinum.platinumRod;
-import flippity.aten.items.silver.silverDust;
-import flippity.aten.items.silver.silverIngot;
-import flippity.aten.items.silver.silverPipe;
-import flippity.aten.items.silver.silverPlate;
-import flippity.aten.items.silver.silverRod;
-import flippity.aten.items.steel.steelDust;
-import flippity.aten.items.steel.steelIngot;
-import flippity.aten.items.steel.steelPipe;
-import flippity.aten.items.steel.steelPlate;
-import flippity.aten.items.steel.steelRod;
-import flippity.aten.items.tin.tinDust;
-import flippity.aten.items.tin.tinIngot;
-import flippity.aten.items.tin.tinPipe;
-import flippity.aten.items.tin.tinPlate;
-import flippity.aten.items.tin.tinRod;
+import flippity.aten.blocks.buildingMaterials.ReinforcedGlowstone;
+import flippity.aten.blocks.buildingMaterials.HardBricks;
+import flippity.aten.blocks.lead.BlockLead;
+import flippity.aten.blocks.lead.OreLead;
+import flippity.aten.blocks.nickel.BlockNickel;
+import flippity.aten.blocks.nickel.OreNickel;
+import flippity.aten.blocks.nuclear.OreUranium;
+import flippity.aten.blocks.osmium.BlockOsmium;
+import flippity.aten.blocks.osmium.OreOsmium;
+import flippity.aten.blocks.platinum.BlockPlatinum;
+import flippity.aten.blocks.platinum.OrePlatinum;
+import flippity.aten.blocks.silver.BlockSilver;
+import flippity.aten.blocks.silver.OreSilver;
+import flippity.aten.blocks.steel.BlockSteel;
+import flippity.aten.blocks.tin.BlockTin;
+import flippity.aten.blocks.tin.OreTin;
+import flippity.aten.blocks.zinc.BlockZinc;
+import flippity.aten.blocks.zinc.OreZinc;
+import flippity.aten.items.gold.GoldDust;
+import flippity.aten.items.gold.GoldPipe;
+import flippity.aten.items.gold.GoldPlate;
+import flippity.aten.items.gold.GoldRod;
+import flippity.aten.items.iron.IronDust;
+import flippity.aten.items.iron.IronPipe;
+import flippity.aten.items.iron.IronPlate;
+import flippity.aten.items.iron.IronRod;
+import flippity.aten.items.lead.LeadDust;
+import flippity.aten.items.lead.LeadIngot;
+import flippity.aten.items.lead.LeadPipe;
+import flippity.aten.items.lead.LeadPlate;
+import flippity.aten.items.lead.LeadRod;
+import flippity.aten.items.misc.buildingMaterials.ConcreteMix;
+import flippity.aten.items.misc.buildingMaterials.HardBrick;
+import flippity.aten.items.nickel.NickelDust;
+import flippity.aten.items.nickel.NickelIngot;
+import flippity.aten.items.nickel.NickelPipe;
+import flippity.aten.items.nickel.NickelPlate;
+import flippity.aten.items.nickel.NickelRod;
+import flippity.aten.items.nuclear.UraniumPuck235;
+import flippity.aten.items.nuclear.UraniumPuck238;
+import flippity.aten.items.nuclear.Yellowcake;
+import flippity.aten.items.osmium.OsmiumDust;
+import flippity.aten.items.osmium.OsmiumIngot;
+import flippity.aten.items.osmium.OsmiumPipe;
+import flippity.aten.items.osmium.OsmiumPlate;
+import flippity.aten.items.osmium.OsmiumRod;
+import flippity.aten.items.platinum.PlatinumDust;
+import flippity.aten.items.platinum.PlatinumIngot;
+import flippity.aten.items.platinum.PlatinumPipe;
+import flippity.aten.items.platinum.PlatinumPlate;
+import flippity.aten.items.platinum.PlatinumRod;
+import flippity.aten.items.silver.SilverDust;
+import flippity.aten.items.silver.SilverIngot;
+import flippity.aten.items.silver.SilverPipe;
+import flippity.aten.items.silver.SilverPlate;
+import flippity.aten.items.silver.SilverRod;
+import flippity.aten.items.steel.SteelDust;
+import flippity.aten.items.steel.SteelIngot;
+import flippity.aten.items.steel.SteelPipe;
+import flippity.aten.items.steel.SteelPlate;
+import flippity.aten.items.steel.SteelRod;
+import flippity.aten.items.tin.TinDust;
+import flippity.aten.items.tin.TinIngot;
+import flippity.aten.items.tin.TinPipe;
+import flippity.aten.items.tin.TinPlate;
+import flippity.aten.items.tin.TinRod;
 import flippity.aten.items.tools.antidote;
 import flippity.aten.items.tools.hazmatArmor;
-import flippity.aten.items.zinc.zincDust;
-import flippity.aten.items.zinc.zincIngot;
-import flippity.aten.items.zinc.zincPipe;
-import flippity.aten.items.zinc.zincPlate;
-import flippity.aten.items.zinc.zincRod;
+import flippity.aten.items.zinc.ZincDust;
+import flippity.aten.items.zinc.ZincIngot;
+import flippity.aten.items.zinc.ZincPipe;
+import flippity.aten.items.zinc.ZincPlate;
+import flippity.aten.items.zinc.ZincRod;
 import flippity.aten.lib.PotionEvent;
 import flippity.aten.lib.RadiationEffect;
 import net.minecraft.block.Block;
@@ -177,8 +177,8 @@ public class ItemsBlocks {
 	// ==============================Misc==================================\\
 	// =====================================================================\\
 	// hard brick
-	public static Block hardBrick;
-	public static Item hardbrick;
+	public static Block HardBricks;
+	public static Item HardBrick;
 	// concrete mix
 	public static Item concreteMix;
 	// radioactive
@@ -222,112 +222,112 @@ public class ItemsBlocks {
 		GameRegistry.registerItem(hazmatBoots = new hazmatArmor("hazmatBoots", HAZMAT, "hazmat", 3), "hazmatBoots"); // 3
 
 		// lead
-		leadIngot = new leadIngot();
+		leadIngot = new LeadIngot();
 		GameRegistry.registerItem(leadIngot, "leadIngot");
-		leadDust = new leadDust();
+		leadDust = new LeadDust();
 		GameRegistry.registerItem(leadDust, "leadDust");
-		leadPipe = new leadPipe();
+		leadPipe = new LeadPipe();
 		GameRegistry.registerItem(leadPipe, "leadPipe");
-		leadPlate = new leadPlate();
+		leadPlate = new LeadPlate();
 		GameRegistry.registerItem(leadPlate, "leadPlate");
-		leadRod = new leadRod();
+		leadRod = new LeadRod();
 		GameRegistry.registerItem(leadRod, "leadRod");
 		// nickel
-		nickelIngot = new nickelIngot();
+		nickelIngot = new NickelIngot();
 		GameRegistry.registerItem(nickelIngot, "nickelIngot");
-		nickelDust = new nickelDust();
+		nickelDust = new NickelDust();
 		GameRegistry.registerItem(nickelDust, "nickelDust");
-		nickelPipe = new nickelPipe();
+		nickelPipe = new NickelPipe();
 		GameRegistry.registerItem(nickelPipe, "nickelPipe");
-		nickelPlate = new nickelPlate();
+		nickelPlate = new NickelPlate();
 		GameRegistry.registerItem(nickelPlate, "nickelPlate");
-		nickelRod = new nickelRod();
+		nickelRod = new NickelRod();
 		GameRegistry.registerItem(nickelRod, "nickelRod");
 		// osmium
-		osmiumIngot = new osmiumIngot();
+		osmiumIngot = new OsmiumIngot();
 		GameRegistry.registerItem(osmiumIngot, "osmiumIngot");
-		osmiumDust = new osmiumDust();
+		osmiumDust = new OsmiumDust();
 		GameRegistry.registerItem(osmiumDust, "osmiumDust");
-		osmiumPipe = new osmiumPipe();
+		osmiumPipe = new OsmiumPipe();
 		GameRegistry.registerItem(osmiumPipe, "osmiumPipe");
-		osmiumPlate = new osmiumPlate();
+		osmiumPlate = new OsmiumPlate();
 		GameRegistry.registerItem(osmiumPlate, "osmiumPlate");
-		osmiumRod = new osmiumRod();
+		osmiumRod = new OsmiumRod();
 		GameRegistry.registerItem(osmiumRod, "osmiumRod");
 		// platinum
-		platinumIngot = new platinumIngot();
+		platinumIngot = new PlatinumIngot();
 		GameRegistry.registerItem(platinumIngot, "platinumIngot");
-		platinumDust = new platinumDust();
+		platinumDust = new PlatinumDust();
 		GameRegistry.registerItem(platinumDust, "platinumDust");
-		platinumPipe = new platinumPipe();
+		platinumPipe = new PlatinumPipe();
 		GameRegistry.registerItem(platinumPipe, "platinumPipe");
-		platinumPlate = new platinumPlate();
+		platinumPlate = new PlatinumPlate();
 		GameRegistry.registerItem(platinumPlate, "platinumPlate");
-		platinumRod = new platinumRod();
+		platinumRod = new PlatinumRod();
 		GameRegistry.registerItem(platinumRod, "platinumRod");
 		// tin
-		tinIngot = new tinIngot();
+		tinIngot = new TinIngot();
 		GameRegistry.registerItem(tinIngot, "tinIngot");
-		tinDust = new tinDust();
+		tinDust = new TinDust();
 		GameRegistry.registerItem(tinDust, "tinDust");
-		tinPipe = new tinPipe();
+		tinPipe = new TinPipe();
 		GameRegistry.registerItem(tinPipe, "tinPipe");
-		tinPlate = new tinPlate();
+		tinPlate = new TinPlate();
 		GameRegistry.registerItem(tinPlate, "tinPlate");
-		tinRod = new tinRod();
+		tinRod = new TinRod();
 		GameRegistry.registerItem(tinRod, "tinRod");
 		// zinc
-		zincIngot = new zincIngot();
+		zincIngot = new ZincIngot();
 		GameRegistry.registerItem(zincIngot, "zincIngot");
-		zincDust = new zincDust();
+		zincDust = new ZincDust();
 		GameRegistry.registerItem(zincDust, "zincDust");
-		zincPipe = new zincPipe();
+		zincPipe = new ZincPipe();
 		GameRegistry.registerItem(zincPipe, "zincPipe");
-		zincPlate = new zincPlate();
+		zincPlate = new ZincPlate();
 		GameRegistry.registerItem(zincPlate, "zincPlate");
-		zincRod = new zincRod();
+		zincRod = new ZincRod();
 		GameRegistry.registerItem(zincRod, "zincRod");
 		// silver
-		silverIngot = new silverIngot();
+		silverIngot = new SilverIngot();
 		GameRegistry.registerItem(silverIngot, "silverIngot");
-		silverDust = new silverDust();
+		silverDust = new SilverDust();
 		GameRegistry.registerItem(silverDust, "silverDust");
-		silverPipe = new silverPipe();
+		silverPipe = new SilverPipe();
 		GameRegistry.registerItem(silverPipe, "silverPipe");
-		silverPlate = new silverPlate();
+		silverPlate = new SilverPlate();
 		GameRegistry.registerItem(silverPlate, "silverPlate");
-		silverRod = new silverRod();
+		silverRod = new SilverRod();
 		GameRegistry.registerItem(silverRod, "silverRod");
 		// steel
-		steelIngot = new steelIngot();
+		steelIngot = new SteelIngot();
 		GameRegistry.registerItem(steelIngot, "steelIngot");
-		steelDust = new steelDust();
+		steelDust = new SteelDust();
 		GameRegistry.registerItem(steelDust, "steelDust");
-		steelPipe = new steelPipe();
+		steelPipe = new SteelPipe();
 		GameRegistry.registerItem(steelPipe, "steelPipe");
-		steelPlate = new steelPlate();
+		steelPlate = new SteelPlate();
 		GameRegistry.registerItem(steelPlate, "steelPlate");
-		steelRod = new steelRod();
+		steelRod = new SteelRod();
 		GameRegistry.registerItem(steelRod, "steelRod");
 		// ===================================================================\\
 		// ==============================Misc==================================\\
 		// =====================================================================\\
 		// hard brick
-		hardbrick = new hardbrick();
-		GameRegistry.registerItem(hardbrick, "hardbrick");
+		HardBrick = new HardBrick();
+		GameRegistry.registerItem(HardBrick, "HardBrick");
 		// concrete mix
-		concreteMix = new concreteMix();
+		concreteMix = new ConcreteMix();
 		GameRegistry.registerItem(concreteMix, "concreteMix");
 		// Radioactive
-		yellowcake = new yellowcake();
+		yellowcake = new Yellowcake();
 		GameRegistry.registerItem(yellowcake, "yellowcake");
 
 		Radiation = new RadiationEffect(25, true, 0).setIconIndex(0, 0).setPotionName("potion.radiationEffect");
 		MinecraftForge.EVENT_BUS.register(new PotionEvent());
 
-		uraniumPuck238 = new uraniumPuck238();
+		uraniumPuck238 = new UraniumPuck238();
 		GameRegistry.registerItem(uraniumPuck238, "uraniumPuck238");
-		uraniumPuck235 = new uraniumPuck235();
+		uraniumPuck235 = new UraniumPuck235();
 		GameRegistry.registerItem(uraniumPuck235, "uraniumPuck235");
 
 		antidote = new antidote(null, 0, 0, false);
@@ -344,42 +344,42 @@ public class ItemsBlocks {
 		// Metals
 
 		// nickel
-		nickelBlock = new nickelBlock(Material.iron);
+		nickelBlock = new BlockNickel(Material.iron);
 		GameRegistry.registerBlock(nickelBlock, "nickelBlock");
-		nickelOre = new nickelOre(Material.rock);
+		nickelOre = new OreNickel(Material.rock);
 		GameRegistry.registerBlock(nickelOre, "nickelOre");
 		// osmium
-		osmiumBlock = new osmiumBlock(Material.iron);
+		osmiumBlock = new BlockOsmium(Material.iron);
 		GameRegistry.registerBlock(osmiumBlock, "osmiumBlock");
-		osmiumOre = new osmiumOre(Material.rock);
+		osmiumOre = new OreOsmium(Material.rock);
 		GameRegistry.registerBlock(osmiumOre, "osmiumOre");
 		// lead
-		leadBlock = new leadBlock(Material.iron);
+		leadBlock = new BlockLead(Material.iron);
 		GameRegistry.registerBlock(leadBlock, "leadBlock");
-		leadOre = new leadOre(Material.rock);
+		leadOre = new OreLead(Material.rock);
 		GameRegistry.registerBlock(leadOre, "leadOre");
 		// platinum
-		platinumBlock = new platinumBlock(Material.iron);
+		platinumBlock = new BlockPlatinum(Material.iron);
 		GameRegistry.registerBlock(platinumBlock, "platinumBlock");
-		platinumOre = new platinumOre(Material.rock);
+		platinumOre = new OrePlatinum(Material.rock);
 		GameRegistry.registerBlock(platinumOre, "platinumOre");
 		// tin
-		tinBlock = new tinBlock(Material.iron);
+		tinBlock = new BlockTin(Material.iron);
 		GameRegistry.registerBlock(tinBlock, "tinBlock");
-		tinOre = new tinOre(Material.rock);
+		tinOre = new OreTin(Material.rock);
 		GameRegistry.registerBlock(tinOre, "tinOre");
 		// zinc
-		zincBlock = new zincBlock(Material.iron);
+		zincBlock = new BlockZinc(Material.iron);
 		GameRegistry.registerBlock(zincBlock, "zincBlock");
-		zincOre = new zincOre(Material.rock);
+		zincOre = new OreZinc(Material.rock);
 		GameRegistry.registerBlock(zincOre, "zincOre");
 		// silver
-		silverBlock = new silverBlock(Material.iron);
+		silverBlock = new BlockSilver(Material.iron);
 		GameRegistry.registerBlock(silverBlock, "silverBlock");
-		silverOre = new silverOre(Material.rock);
+		silverOre = new OreSilver(Material.rock);
 		GameRegistry.registerBlock(silverOre, "silverOre");
 		// uranium
-		uraniumOre = new uraniumOre(Material.rock);
+		uraniumOre = new OreUranium(Material.rock);
 		GameRegistry.registerBlock(uraniumOre, "uraniumOre");
 		// ===================================================================\\
 		// ==============================Misc==================================\\
@@ -387,12 +387,12 @@ public class ItemsBlocks {
 		// unnatural elements
 		// Alloys or Extractants
 		// steel
-		steelBlock = new steelBlock(Material.iron);
+		steelBlock = new BlockSteel(Material.iron);
 		GameRegistry.registerBlock(steelBlock, "steelBlock");
 		// Building Blocks
-		hardBrick = new hardBrick(Material.rock);
-		GameRegistry.registerBlock(hardBrick, "hardBrick");
-		reinforcedGlowstone = new reinforcedGlowstone(Material.rock);
+		HardBricks = new HardBricks(Material.rock);
+		GameRegistry.registerBlock(HardBricks, "HardBrick");
+		reinforcedGlowstone = new ReinforcedGlowstone(Material.rock);
 		GameRegistry.registerBlock(reinforcedGlowstone, "reinforcedGlowstone");
 	}
 	

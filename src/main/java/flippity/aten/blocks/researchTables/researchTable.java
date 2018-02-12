@@ -7,8 +7,8 @@ import cpw.mods.fml.relauncher.SideOnly;
 import flippity.aten.AtomicEngineering;
 import flippity.aten.ItemsBlocks;
 import flippity.aten.lib.Reference;
-import flippity.aten.registrys.tabs;
-import flippity.aten.blocks.researchTables.researchTableEntity;
+import flippity.aten.registrys.Tabs;
+import flippity.aten.blocks.researchTables.ResearchTableEntity;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockContainer;
 import net.minecraft.block.material.Material;
@@ -18,11 +18,11 @@ import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.MathHelper;
 import net.minecraft.world.World;
 
-public class researchTable extends BlockContainer{
-	public researchTable() {
+public class ResearchTable extends BlockContainer{
+	public ResearchTable() {
 		super(Material.iron);
 		this.setBlockName("researchTable");
-		this.setCreativeTab(tabs.tabAtomBlocks);
+		this.setCreativeTab(Tabs.tabAtomBlocks);
 		this.setBlockTextureName(Reference.MOD_ID + ":researchTable");
 		this.setHardness(1.5F);
 		this.setStepSound(soundTypeWood);
@@ -52,7 +52,7 @@ public class researchTable extends BlockContainer{
 	
 	@Override
 	public TileEntity createNewTileEntity(World world, int id) {
-		return new researchTableEntity();
+		return new ResearchTableEntity();
 	}
 	
 	public void onBlockPlacedBy(World world, int x, int y, int z, EntityLivingBase player, ItemStack stack)

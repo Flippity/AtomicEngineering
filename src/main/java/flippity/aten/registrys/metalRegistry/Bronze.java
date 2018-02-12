@@ -1,18 +1,18 @@
 package flippity.aten.registrys.metalRegistry;
 
 import cpw.mods.fml.common.registry.GameRegistry;
-import flippity.aten.blocks.bronze.bronzeBlock;
-import flippity.aten.items.bronze.bronzeDust;
-import flippity.aten.items.bronze.bronzeIngot;
-import flippity.aten.items.bronze.bronzePipe;
-import flippity.aten.items.bronze.bronzePlate;
-import flippity.aten.items.bronze.bronzeRod;
+import flippity.aten.blocks.bronze.BlockBronze;
+import flippity.aten.items.bronze.BronzeDust;
+import flippity.aten.items.bronze.BronzeIngot;
+import flippity.aten.items.bronze.BronzePipe;
+import flippity.aten.items.bronze.BronzePlate;
+import flippity.aten.items.bronze.BronzeRod;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.Item;
 
 public class Bronze {
-	public static Block bronzeBlock;
+	public static Block BlockBronze;
 	public static Item bronzeIngot;
 	public static Item bronzeDust;
 	public static Item bronzePipe;
@@ -22,22 +22,22 @@ public class Bronze {
 	public static Item bronzeHardMold;
 
 	public static void initItems() {
-		bronzeIngot = new bronzeIngot();
+		bronzeIngot = new BronzeIngot();
 		GameRegistry.registerItem(bronzeIngot, "bronzeIngot");
-		bronzeDust = new bronzeDust();
+		bronzeDust = new BronzeDust();
 		GameRegistry.registerItem(bronzeDust, "bronzeDust");
-		bronzePipe = new bronzePipe();
+		bronzePipe = new BronzePipe();
 		GameRegistry.registerItem(bronzePipe, "bronzePipe");
-		bronzePlate = new bronzePlate();
+		bronzePlate = new BronzePlate();
 		GameRegistry.registerItem(bronzePlate, "bronzePlate");
-		bronzeRod = new bronzeRod();
+		bronzeRod = new BronzeRod();
 		GameRegistry.registerItem(bronzeRod, "bronzeRod");
 
 	}
 
 	public static void initBlocks() {
-		bronzeBlock = new bronzeBlock(Material.iron);
-		GameRegistry.registerBlock(bronzeBlock, "bronzeBlock");
+		BlockBronze = new BlockBronze(Material.iron);
+		GameRegistry.registerBlock(BlockBronze, "BlockBronze");
 
 	}
 

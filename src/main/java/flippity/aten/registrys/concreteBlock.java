@@ -1,81 +1,81 @@
 package flippity.aten.registrys;
 
 import cpw.mods.fml.common.registry.GameRegistry;
-import flippity.aten.blocks.building_mats.concrete.concrete;
+import flippity.aten.blocks.buildingMaterials.concrete.Concrete;
+import flippity.aten.blocks.buildingMaterials.concrete.ConcreteBlack;
+import flippity.aten.blocks.buildingMaterials.concrete.ConcreteBlue;
+import flippity.aten.blocks.buildingMaterials.concrete.ConcreteBrown;
+import flippity.aten.blocks.buildingMaterials.concrete.ConcreteCyan;
+import flippity.aten.blocks.buildingMaterials.concrete.ConcreteGray;
+import flippity.aten.blocks.buildingMaterials.concrete.ConcreteGreen;
+import flippity.aten.blocks.buildingMaterials.concrete.ConcreteLightBlue;
+import flippity.aten.blocks.buildingMaterials.concrete.ConcreteLightGray;
+import flippity.aten.blocks.buildingMaterials.concrete.ConcreteLime;
+import flippity.aten.blocks.buildingMaterials.concrete.ConcreteMagenta;
+import flippity.aten.blocks.buildingMaterials.concrete.ConcreteOrange;
+import flippity.aten.blocks.buildingMaterials.concrete.ConcretePink;
+import flippity.aten.blocks.buildingMaterials.concrete.ConcretePurple;
+import flippity.aten.blocks.buildingMaterials.concrete.ConcreteRed;
+import flippity.aten.blocks.buildingMaterials.concrete.ConcreteYellow;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
-import flippity.aten.blocks.building_mats.concrete.concreteOrange;
-import flippity.aten.blocks.building_mats.concrete.concreteMagenta;
-import flippity.aten.blocks.building_mats.concrete.concreteLightBlue;
-import flippity.aten.blocks.building_mats.concrete.concreteYellow;
-import flippity.aten.blocks.building_mats.concrete.concreteLime;
-import flippity.aten.blocks.building_mats.concrete.concretePink;
-import flippity.aten.blocks.building_mats.concrete.concreteGray;
-import flippity.aten.blocks.building_mats.concrete.concreteLightGray;
-import flippity.aten.blocks.building_mats.concrete.concreteCyan;
-import flippity.aten.blocks.building_mats.concrete.concretePurple;
-import flippity.aten.blocks.building_mats.concrete.concreteBlue;
-import flippity.aten.blocks.building_mats.concrete.concreteBrown;
-import flippity.aten.blocks.building_mats.concrete.concreteGreen;
-import flippity.aten.blocks.building_mats.concrete.concreteRed;
-import flippity.aten.blocks.building_mats.concrete.concreteBlack;
 
-public class concreteBlock {
+public class ConcreteBlock {
 
-	public static Block concrete;
-	public static Block concreteOrange;
-	public static Block concreteMagenta;
-	public static Block concreteLightBlue;
-	public static Block concreteYellow;
-	public static Block concreteLime;
-	public static Block concretePink;
-	public static Block concreteGray;
-	public static Block concreteLightGray;
-	public static Block concreteCyan;
-	public static Block concretePurple;
-	public static Block concreteBlue;
-	public static Block concreteBrown;
-	public static Block concreteGreen;
-	public static Block concreteRed;
-	public static Block concreteBlack;
+	public static Block Concrete;
+	public static Block ConcreteOrange;
+	public static Block ConcreteMagenta;
+	public static Block ConcreteLightBlue;
+	public static Block ConcreteYellow;
+	public static Block ConcreteLime;
+	public static Block ConcretePink;
+	public static Block ConcreteGray;
+	public static Block ConcreteLightGray;
+	public static Block ConcreteCyan;
+	public static Block ConcretePurple;
+	public static Block ConcreteBlue;
+	public static Block ConcreteBrown;
+	public static Block ConcreteGreen;
+	public static Block ConcreteRed;
+	public static Block ConcreteBlack;
 
 
 
 	// public static Block
 
 	public static void initBlocks() {
-		concrete = new concrete(Material.rock);
-		GameRegistry.registerBlock(concrete, "concrete");
-		concreteOrange = new concreteOrange(Material.rock);
-		GameRegistry.registerBlock(concreteOrange, "concreteOrange");
-		concreteMagenta = new concreteMagenta(Material.rock);
-		GameRegistry.registerBlock(concreteMagenta, "concreteMagenta");
-		concreteLightBlue = new concreteLightBlue(Material.rock);
-		GameRegistry.registerBlock(concreteLightBlue, "concreteLightBlue");
-		concreteYellow = new concreteYellow(Material.rock);
-		GameRegistry.registerBlock(concreteYellow, "concreteYellow");
-		concreteLime = new concreteLime(Material.rock);
-		GameRegistry.registerBlock(concreteLime, "concreteLime");
-		concretePink = new concretePink(Material.rock);
-		GameRegistry.registerBlock(concretePink, "concretePink");
-		concreteGray = new concreteGray(Material.rock);
-		GameRegistry.registerBlock(concreteGray, "concreteGray");
-		concreteLightGray = new concreteLightGray(Material.rock);
-		GameRegistry.registerBlock(concreteLightGray, "concreteLightGray");
-		concreteCyan = new concreteCyan(Material.rock);
-		GameRegistry.registerBlock(concreteCyan, "concreteCyan");
-		concretePurple = new concretePurple(Material.rock);
-		GameRegistry.registerBlock(concretePurple, "concretePurple");
-		concreteBlue = new concreteBlue(Material.rock);
-		GameRegistry.registerBlock(concreteBlue, "concreteBlue");
-		concreteBrown = new concreteBrown(Material.rock);
-		GameRegistry.registerBlock(concreteBrown, "concreteBrown");
-		concreteGreen = new concreteGreen(Material.rock);
-		GameRegistry.registerBlock(concreteGreen, "concreteGreen");
-		concreteRed = new concreteRed(Material.rock);
-		GameRegistry.registerBlock(concreteRed, "concreteRed");
-		concreteBlack = new concreteBlack(Material.rock);
-		GameRegistry.registerBlock(concreteBlack, "concreteBlack");
+		Concrete = new Concrete(Material.rock);
+		GameRegistry.registerBlock(Concrete, "Concrete");
+		ConcreteOrange = new ConcreteOrange(Material.rock);
+		GameRegistry.registerBlock(ConcreteOrange, "ConcreteOrange");
+		ConcreteMagenta = new ConcreteMagenta(Material.rock);
+		GameRegistry.registerBlock(ConcreteMagenta, "ConcreteMagenta");
+		ConcreteLightBlue = new ConcreteLightBlue(Material.rock);
+		GameRegistry.registerBlock(ConcreteLightBlue, "ConcreteLightBlue");
+		ConcreteYellow = new ConcreteYellow(Material.rock);
+		GameRegistry.registerBlock(ConcreteYellow, "ConcreteYellow");
+		ConcreteLime = new ConcreteLime(Material.rock);
+		GameRegistry.registerBlock(ConcreteLime, "ConcreteLime");
+		ConcretePink = new ConcretePink(Material.rock);
+		GameRegistry.registerBlock(ConcretePink, "ConcretePink");
+		ConcreteGray = new ConcreteGray(Material.rock);
+		GameRegistry.registerBlock(ConcreteGray, "ConcreteGray");
+		ConcreteLightGray = new ConcreteLightGray(Material.rock);
+		GameRegistry.registerBlock(ConcreteLightGray, "ConcreteLightGray");
+		ConcreteCyan = new ConcreteCyan(Material.rock);
+		GameRegistry.registerBlock(ConcreteCyan, "ConcreteCyan");
+		ConcretePurple = new ConcretePurple(Material.rock);
+		GameRegistry.registerBlock(ConcretePurple, "ConcretePurple");
+		ConcreteBlue = new ConcreteBlue(Material.rock);
+		GameRegistry.registerBlock(ConcreteBlue, "ConcreteBlue");
+		ConcreteBrown = new ConcreteBrown(Material.rock);
+		GameRegistry.registerBlock(ConcreteBrown, "ConcreteBrown");
+		ConcreteGreen = new ConcreteGreen(Material.rock);
+		GameRegistry.registerBlock(ConcreteGreen, "ConcreteGreen");
+		ConcreteRed = new ConcreteRed(Material.rock);
+		GameRegistry.registerBlock(ConcreteRed, "ConcreteRed");
+		ConcreteBlack = new ConcreteBlack(Material.rock);
+		GameRegistry.registerBlock(ConcreteBlack, "ConcreteBlack");
 	}
 
 	public static void initItems() {

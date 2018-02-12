@@ -5,13 +5,13 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.registry.GameRegistry;
-import flippity.aten.blocks.copper.copperBlock;
-import flippity.aten.blocks.copper.copperOre;
-import flippity.aten.items.copper.copperDust;
-import flippity.aten.items.copper.copperIngot;
-import flippity.aten.items.copper.copperPipe;
-import flippity.aten.items.copper.copperPlate;
-import flippity.aten.items.copper.copperRod;
+import flippity.aten.blocks.copper.BlockCopper;
+import flippity.aten.blocks.copper.OreCopper;
+import flippity.aten.items.copper.CopperDust;
+import flippity.aten.items.copper.CopperIngot;
+import flippity.aten.items.copper.CopperPipe;
+import flippity.aten.items.copper.CopperPlate;
+import flippity.aten.items.copper.CopperRod;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.Item;
@@ -28,24 +28,24 @@ public class Copper {
 	public static Item copperHardMold;
 
 	public static void initItems() {
-		copperIngot = new copperIngot();
+		copperIngot = new CopperIngot();
 		GameRegistry.registerItem(copperIngot, "copperIngot");
-		copperDust = new copperDust();
+		copperDust = new CopperDust();
 		GameRegistry.registerItem(copperDust, "copperDust");
-		copperPipe = new copperPipe();
+		copperPipe = new CopperPipe();
 		GameRegistry.registerItem(copperPipe, "copperPipe");
-		copperPlate = new copperPlate();
+		copperPlate = new CopperPlate();
 		GameRegistry.registerItem(copperPlate, "copperPlate");
-		copperRod = new copperRod();
+		copperRod = new CopperRod();
 		GameRegistry.registerItem(copperRod, "copperRod");
 
 
 	}
 
 	public static void initBlocks() {
-		copperBlock = new copperBlock(Material.iron);
+		copperBlock = new BlockCopper(Material.iron);
 		GameRegistry.registerBlock(copperBlock, "copperBlock");
-		copperOre = new copperOre(Material.rock);
+		copperOre = new OreCopper(Material.rock);
 		GameRegistry.registerBlock(copperOre, "copperOre");
 
 	}

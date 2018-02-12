@@ -5,7 +5,7 @@ import flippity.aten.registrys.metalRegistry.Copper;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 
-public class tabs {
+public class Tabs {
 	public static CreativeTabs tabAtomItems = new CreativeTabs("Atomic Engineering Items") {
 		@Override
 		public Item getTabIconItem() {

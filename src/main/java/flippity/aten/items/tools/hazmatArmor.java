@@ -5,7 +5,7 @@ import org.lwjgl.util.Timer;
 import flippity.aten.AtomicEngineering;
 import flippity.aten.ItemsBlocks;
 import flippity.aten.lib.Reference;
-import flippity.aten.registrys.tabs;
+import flippity.aten.registrys.Tabs;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
@@ -25,7 +25,7 @@ public class hazmatArmor extends ItemArmor {
 		this.textureName = textureName;
 		this.setUnlocalizedName(unlocalizedName);
 		this.setTextureName(Reference.MOD_ID + ":" + unlocalizedName);
-		this.setCreativeTab(tabs.tabAtomItems);
+		this.setCreativeTab(Tabs.tabAtomItems);
 		this.setMaxStackSize(1);
 		this.setNoRepair();
 		this.setMaxDamage(100000);
