@@ -58,7 +58,7 @@ public class conveyorBelt extends BlockContainer{
         return 0;
     }
     
-   public void onUpdate(Entity entity){
+  /* public void onUpdate(Entity entity){
     	if(entity instanceof EntityItem){
     		((EntityItem) entity).age = -32768;
     		if(dir == 0) {
@@ -148,7 +148,7 @@ public class conveyorBelt extends BlockContainer{
 	  			((EntityLivingBase) entity).moveFlying(x + -.2F/16, y, z);
 	  		}
     	}
-    }
+    }*/
 	  
 	  
 	@Override
